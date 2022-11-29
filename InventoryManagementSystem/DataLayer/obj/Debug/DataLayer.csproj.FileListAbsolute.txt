@@ -1,0 +1,12 @@
+E:\Projects\InventoryManagementSystem\DataLayer\bin\Debug\DataLayer.dll.config
+E:\Projects\InventoryManagementSystem\DataLayer\bin\Debug\DataLayer.dll
+E:\Projects\InventoryManagementSystem\DataLayer\bin\Debug\DataLayer.pdb
+E:\Projects\InventoryManagementSystem\DataLayer\bin\Debug\EntityFramework.dll
+E:\Projects\InventoryManagementSystem\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+E:\Projects\InventoryManagementSystem\DataLayer\bin\Debug\EntityFramework.xml
+E:\Projects\InventoryManagementSystem\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+E:\Projects\InventoryManagementSystem\DataLayer\obj\Debug\DataLayer.csproj.CoreCompileInputs.cache
+E:\Projects\InventoryManagementSystem\DataLayer\obj\Debug\DataLayer.csproj.CopyComplete
+E:\Projects\InventoryManagementSystem\DataLayer\obj\Debug\DataLayer.dll
+E:\Projects\InventoryManagementSystem\DataLayer\obj\Debug\DataLayer.pdb
+E:\Projects\InventoryManagementSystem\DataLayer\obj\Debug\DataLayer.csproj.AssemblyReference.cache

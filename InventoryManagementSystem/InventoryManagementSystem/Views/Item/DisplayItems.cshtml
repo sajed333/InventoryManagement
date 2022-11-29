@@ -1,0 +1,72 @@
+﻿@model IEnumerable<DataLayer.Models.Item>
+
+@{
+    ViewBag.Title = "DisplayItems";
+}
+
+<h2  style="text-align:center">Display Items</h2>
+
+<p>
+    @Html.ActionLink("Create New", "CreateItem", "Item",new { },new { @class="btn btn-primary"})
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayName("Item Name")
+        </th>
+        <th>
+            @Html.DisplayName("UniqueId")
+        </th>
+        <th>
+            @Html.DisplayName("Item Description")
+        </th>
+        <th>
+            @Html.DisplayName("Item Price")
+        </th>
+        <th>
+            @Html.DisplayName("Item Unit")
+        </th>
+        <th>
+            @Html.DisplayName("Warehouse")
+        </th>
+        <th>
+            @Html.DisplayName("Stock Quantity")
+        </th>
+        <th>
+            @Html.DisplayName("Action")
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.ItemName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.UniqueId)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ItemDescription)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Price)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Unit)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Warehouse)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.StockQty)
+    </td>
+
+    <td>
+        @Html.ActionLink("Edit", "UpdateItem", "Item", new { itemId = item.ItemId }, new { @class = "btn btn-primary" }) |
+        @*@Html.ActionLink("Details", "UpdateItem", "Item", new { itemId = item.ItemId }, new { @class = "btn btn-success" }) |*@
+        @Html.ActionLink("Delete", "DeleteItem", "Item", new { itemId = item.ItemId }, new { @class = "btn btn-danger" })
+    </td>
+</tr>
+}
+
+</table>

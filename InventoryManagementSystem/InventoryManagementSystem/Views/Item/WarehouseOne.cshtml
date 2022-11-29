@@ -1,0 +1,40 @@
+﻿@model IEnumerable<DataLayer.Models.Item>
+
+@{
+    ViewBag.Title = "Warehouses";
+}
+
+<h2>Warehouses</h2>
+
+<p>
+    @Html.ActionLink("Create New","CreateItem","Item", new { }, new { @class = "btn btn-primary" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayName("Item Name")
+        </th>
+        <th>
+            @Html.DisplayName("Item Quantity")
+        </th>
+        <th>@Html.DisplayName("Action")</th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ItemName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StockQty)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "EditWarehouseItem", new { itemId = item.ItemId }, new { @class = "btn btn-primary" })
+            @*@Html.ActionLink("Edit", "EditWarehouseItem", "Item", new { itemId = item.ItemId }) |*@
+            @*@Html.ActionLink("Delete", "Delete", new { itemId = item.ItemId })*@
+        </td>
+    </tr>
+}
+
+</table>

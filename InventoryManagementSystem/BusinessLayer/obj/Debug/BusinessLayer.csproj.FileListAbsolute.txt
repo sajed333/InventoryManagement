@@ -1,0 +1,12 @@
+E:\Projects\InventoryManagementSystem\BusinessLayer\bin\Debug\BusinessLayer.dll
+E:\Projects\InventoryManagementSystem\BusinessLayer\bin\Debug\BusinessLayer.pdb
+E:\Projects\InventoryManagementSystem\BusinessLayer\bin\Debug\DataLayer.dll
+E:\Projects\InventoryManagementSystem\BusinessLayer\bin\Debug\EntityFramework.dll
+E:\Projects\InventoryManagementSystem\BusinessLayer\bin\Debug\DataLayer.pdb
+E:\Projects\InventoryManagementSystem\BusinessLayer\bin\Debug\DataLayer.dll.config
+E:\Projects\InventoryManagementSystem\BusinessLayer\bin\Debug\EntityFramework.xml
+E:\Projects\InventoryManagementSystem\BusinessLayer\obj\Debug\BusinessLayer.csproj.AssemblyReference.cache
+E:\Projects\InventoryManagementSystem\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+E:\Projects\InventoryManagementSystem\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
+E:\Projects\InventoryManagementSystem\BusinessLayer\obj\Debug\BusinessLayer.dll
+E:\Projects\InventoryManagementSystem\BusinessLayer\obj\Debug\BusinessLayer.pdb

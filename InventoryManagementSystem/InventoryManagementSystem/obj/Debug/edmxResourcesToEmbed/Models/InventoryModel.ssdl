@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Inventory_Management_systeamModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbItemMaster">
+    <Key>
+      <PropertyRef Name="ItemId" />
+    </Key>
+    <Property Name="ItemId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ItemDescription" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Price" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Unit" Type="int" Nullable="false" />
+    <Property Name="WarehouseId" Type="int" />
+    <Property Name="StockQty" Type="int" />
+    <Property Name="ItemName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbPurchase">
+    <Key>
+      <PropertyRef Name="PurchaseId" />
+    </Key>
+    <Property Name="PurchaseId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Purchased_Item" Type="nvarchar" MaxLength="50" />
+    <Property Name="Purchased_Qty" Type="int" />
+    <Property Name="Purchased_Date" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbSale">
+    <Key>
+      <PropertyRef Name="SaleId" />
+    </Key>
+    <Property Name="SaleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Sale_Item" Type="nvarchar" MaxLength="50" />
+    <Property Name="Sale_Qty" Type="int" />
+    <Property Name="Sale_Date" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbWarehouse">
+    <Key>
+      <PropertyRef Name="WarehouseId" />
+    </Key>
+    <Property Name="WarehouseId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WarehouseDescription" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Inventory_Management_systeamModelStoreContainer">
+    <EntitySet Name="tbItemMaster" EntityType="Self.tbItemMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbPurchase" EntityType="Self.tbPurchase" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbSale" EntityType="Self.tbSale" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbWarehouse" EntityType="Self.tbWarehouse" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

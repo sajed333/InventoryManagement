@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Inventory_Management_systeamModelStoreContainer" CdmEntityContainer="Inventory_Management_systeamEntities">
+    <EntitySetMapping Name="tbItemMasters">
+      <EntityTypeMapping TypeName="Inventory_Management_systeamModel.tbItemMaster">
+        <MappingFragment StoreEntitySet="tbItemMaster">
+          <ScalarProperty Name="UniqueId" ColumnName="UniqueId" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="ItemDescription" ColumnName="ItemDescription" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="WarehouseId" ColumnName="WarehouseId" />
+          <ScalarProperty Name="StockQty" ColumnName="StockQty" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbPurchases">
+      <EntityTypeMapping TypeName="Inventory_Management_systeamModel.tbPurchase">
+        <MappingFragment StoreEntitySet="tbPurchase">
+          <ScalarProperty Name="PurchaseId" ColumnName="PurchaseId" />
+          <ScalarProperty Name="Purchased_Item" ColumnName="Purchased_Item" />
+          <ScalarProperty Name="Purchased_Qty" ColumnName="Purchased_Qty" />
+          <ScalarProperty Name="Purchased_Date" ColumnName="Purchased_Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbSales">
+      <EntityTypeMapping TypeName="Inventory_Management_systeamModel.tbSale">
+        <MappingFragment StoreEntitySet="tbSale">
+          <ScalarProperty Name="SaleId" ColumnName="SaleId" />
+          <ScalarProperty Name="Sale_Item" ColumnName="Sale_Item" />
+          <ScalarProperty Name="Sale_Qty" ColumnName="Sale_Qty" />
+          <ScalarProperty Name="Sale_Date" ColumnName="Sale_Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbWarehouses">
+      <EntityTypeMapping TypeName="Inventory_Management_systeamModel.tbWarehouse">
+        <MappingFragment StoreEntitySet="tbWarehouse">
+          <ScalarProperty Name="WarehouseId" ColumnName="WarehouseId" />
+          <ScalarProperty Name="WarehouseDescription" ColumnName="WarehouseDescription" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbUsers">
+      <EntityTypeMapping TypeName="Inventory_Management_systeamModel.tbUser">
+        <MappingFragment StoreEntitySet="tbUser">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

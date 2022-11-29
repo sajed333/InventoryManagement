@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Inventory_Management_systeamModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tbItemMaster">
+    <Key>
+      <PropertyRef Name="ItemId" />
+    </Key>
+    <Property Name="ItemId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ItemDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Unit" Type="Int32" Nullable="false" />
+    <Property Name="WarehouseId" Type="Int32" />
+    <Property Name="StockQty" Type="Int32" />
+    <Property Name="ItemName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tbPurchase">
+    <Key>
+      <PropertyRef Name="PurchaseId" />
+    </Key>
+    <Property Name="PurchaseId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Purchased_Item" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Purchased_Qty" Type="Int32" />
+    <Property Name="Purchased_Date" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tbSale">
+    <Key>
+      <PropertyRef Name="SaleId" />
+    </Key>
+    <Property Name="SaleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Sale_Item" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Sale_Qty" Type="Int32" />
+    <Property Name="Sale_Date" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tbWarehouse">
+    <Key>
+      <PropertyRef Name="WarehouseId" />
+    </Key>
+    <Property Name="WarehouseId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WarehouseDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Inventory_Management_systeamEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tbItemMasters" EntityType="Self.tbItemMaster" />
+    <EntitySet Name="tbPurchases" EntityType="Self.tbPurchase" />
+    <EntitySet Name="tbSales" EntityType="Self.tbSale" />
+    <EntitySet Name="tbWarehouses" EntityType="Self.tbWarehouse" />
+  </EntityContainer>
+</Schema>
